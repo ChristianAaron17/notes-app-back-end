@@ -10,10 +10,10 @@ const addNoteHandler = (request, h) => {
   const newNote = {
     id,
     title,
-    tags,
-    body,
     createdAt,
     updatedAt,
+    tags,
+    body,
   };
   notes.push(newNote);
 
@@ -32,7 +32,7 @@ const addNoteHandler = (request, h) => {
   }
   const response = h.response({
     status: 'fail',
-    message: 'Catatan gagl ditambahkan',
+    message: 'Catatan gagal ditambahkan',
   });
   response.code(500);
   return response;

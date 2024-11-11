@@ -2,8 +2,8 @@ const notes = [
   {
     id: String,
     title: String,
-    createdAt: String,
     updatedAt: String,
+    createdAt: String,
     tags: Array,
     body: String,
   },
